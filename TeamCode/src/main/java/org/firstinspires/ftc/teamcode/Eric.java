@@ -1,5 +1,5 @@
 // My name is Eric (Eric.java)
-// 2021 - 2022 USACO rp ++ !!!
+// 2021 - 2022 USACO rp ++
 /*code is far away from bug with the animal protecting
  *  ┏┓　　　┏┓
  *┏┛┻━━━┛┻┓
