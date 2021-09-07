@@ -10,6 +10,7 @@ import java.util.List;
 public class TeleOp359 extends LinearOpMode {
 
     public void runOpMode() throws InterruptedException {
+        TODO: what to declare here?
 
         waitForStart();
         while (opModeIsActive()) {
