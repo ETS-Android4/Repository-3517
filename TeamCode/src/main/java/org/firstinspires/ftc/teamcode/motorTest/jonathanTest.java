@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import java.util.List;
 
 @TeleOp
-public class TeleOp359 extends LinearOpMode {
+public class jonathanTest extends LinearOpMode {
 
     private DcMotor motorLeft;
     private DcMotor motorRight;
@@ -30,7 +30,7 @@ public class TeleOp359 extends LinearOpMode {
              * Wheels Wheels Wheels    Empty    mpty    mty mt  _
              */
             motorLeft.setPower(-gamepad1.left_stick_y);
-            motorLeft.setPower(-gamepad1.right_stick_y);
+            motorRight.setPower(-gamepad1.right_stick_y);
 
             idle();
 
