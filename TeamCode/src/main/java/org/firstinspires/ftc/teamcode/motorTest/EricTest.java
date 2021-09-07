@@ -9,7 +9,15 @@ import java.util.List;
 @TeleOp
 public class TeleOp359 extends LinearOpMode {
 
+    private DcMotor MotorLeft;
+    private DcMotor MotorRright;
+
     public void runOpMode() throws InterruptedException {
+
+        motorLeft = hardwareMap.dcMotor.get("motorLeft");
+        motorRight = hardwareMap.dcMotor.get("motorRight");
+
+        MotorLeft.setDirection(DcMotor.Directio.REVERSE);
 
         waitForStart();
         while (opModeIsActive()) {
@@ -20,8 +28,7 @@ public class TeleOp359 extends LinearOpMode {
             /**
              * Wheels
              */
-            TODO: Write a program that tells uses the controller to control the wheels... hint: gamepad1.right_stick_x
-
+            //TODO: Write a program that tells uses the controller to control the wheels... hint: gamepad1.right_stick_x
         }
     }
 }
