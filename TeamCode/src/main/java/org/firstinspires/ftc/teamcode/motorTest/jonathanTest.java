@@ -27,7 +27,7 @@ public class TeleOp359 extends LinearOpMode {
             telemetry.update();
 
             /**
-             * Wheels
+             * Wheels Wheels Wheels    Empty    mpty    mty mt  _
              */
             motorLeft.setPower(-gamepad1.left_stick_y);
             motorLeft.setPower(-gamepad1.right_stick_y);
