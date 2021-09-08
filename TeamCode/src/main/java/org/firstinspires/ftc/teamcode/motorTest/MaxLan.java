@@ -6,8 +6,8 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 
 import java.util.List;
 
-@TeleOp(name = "TeleOp359")
-public class TeleOp359 extends LinearOpMode {
+@TeleOp(name = "MaxLan")
+public class MaxLan extends LinearOpMode {
     private DcMotor motorLeft;
     private DcMotor motorRight;
 
