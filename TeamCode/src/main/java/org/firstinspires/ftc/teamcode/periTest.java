@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import java.util.List;
 
 @TeleOp
-public class TeleOp359 extends LinearOpMode {
+public class periTest extends LinearOpMode {
 
     public void runOpMode() throws InterruptedException {
 
