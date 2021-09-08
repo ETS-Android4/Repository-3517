@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import java.util.List;
 
 @TeleOp
-public class TeleOp359 extends LinearOpMode {
+public class charlieTest extends LinearOpMode {
 
     public void runOpMode() throws InterruptedException {
 
@@ -20,8 +20,6 @@ public class TeleOp359 extends LinearOpMode {
             /**
              * Wheels
              */
-            TODO: Write a program that tells uses the controller to control the wheels... hint: gamepad1.right_stick_x
-
         }
     }
 }

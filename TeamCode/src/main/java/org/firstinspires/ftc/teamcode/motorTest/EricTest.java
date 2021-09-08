@@ -7,17 +7,17 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import java.util.List;
 
 @TeleOp
-public class TeleOp359 extends LinearOpMode {
+public class EricTest extends LinearOpMode {
 
     private DcMotor MotorLeft;
-    private DcMotor MotorRright;
+    private DcMotor MotorRight;
 
     public void runOpMode() throws InterruptedException {
 
-        motorLeft = hardwareMap.dcMotor.get("motorLeft");
-        motorRight = hardwareMap.dcMotor.get("motorRight");
+        MotorLeft = hardwareMap.dcMotor.get("motorLeft");
+        MotorRight = hardwareMap.dcMotor.get("motorRight");
 
-        MotorLeft.setDirection(DcMotor.Directio.REVERSE);
+        MotorLeft.setDirection(DcMotor.Direction.REVERSE);
 
         waitForStart();
         while (opModeIsActive()) {
