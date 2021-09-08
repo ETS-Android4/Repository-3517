@@ -6,8 +6,8 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 
 import java.util.List;
 
-@TeleOp(name = "TeleOp359")
-public class TeleOp359 extends LinearOpMode {
+@TeleOp(name = "MaxLan")
+public class MaxLan extends LinearOpMode {
     private DcMotor motorLeft;
     private DcMotor motorRight;
 
@@ -19,11 +19,9 @@ public class TeleOp359 extends LinearOpMode {
 
         motorLeft.setDirection(DcMotor.Direction.REVERSE);
         while (opModeIsActive()) {
-
-
             telemetry.addData("opModeIsActive", opModeIsActive());
             telemetry.update();
-            motorRight.setPower(-gamepad1.right_stick_X);
+            motorRight.setPower(-gamepad1.right_stick_Y);
             motorLeft.setPower(-gamepad1.right_stick_Y);
             /**
              * Wheels
