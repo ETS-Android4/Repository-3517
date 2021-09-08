@@ -21,8 +21,8 @@ public class MaxLan extends LinearOpMode {
         while (opModeIsActive()) {
             telemetry.addData("opModeIsActive", opModeIsActive());
             telemetry.update();
-            motorRight.setPower(-gamepad1.right_stick_Y);
-            motorLeft.setPower(-gamepad1.right_stick_Y);
+            motorRight.setPower(-gamepad1.right_stick_y);
+            motorLeft.setPower(-gamepad1.right_stick_y);
             /**
              * Wheels
              */
