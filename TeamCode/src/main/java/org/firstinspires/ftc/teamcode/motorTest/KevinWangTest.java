@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import java.util.List;
 
 @TeleOp
-public class TeleOp359 extends LinearOpMode {
+public class KevinWangTest extends LinearOpMode {
 
     private DcMotor motorLeft;
     private DcMotor motorRight;
