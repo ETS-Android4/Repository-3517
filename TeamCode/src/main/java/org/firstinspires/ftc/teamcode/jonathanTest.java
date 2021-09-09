@@ -11,7 +11,7 @@ public class jonathanTest extends LinearOpMode {
 
     private DcMotor motorLeft;
     private DcMotor motorRight;
-    
+
     public void runOpMode() throws InterruptedException {
 
         motorLeft = hardwareMap.dcMotor.get("motorLeft");
