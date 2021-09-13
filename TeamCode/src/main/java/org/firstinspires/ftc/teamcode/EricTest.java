@@ -29,9 +29,6 @@ public class EricTest extends LinearOpMode {
             MotorLeft.setPower(1);
             telemetry.addData("Motors running", "Running");
             telemetry.update();
-            /**
-             * Wheels
-             */
             //TODO: Write a program that tells uses the controller to control the wheels... hint: gamepad1.right_stick_x
         }
     }

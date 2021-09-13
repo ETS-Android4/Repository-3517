@@ -20,9 +20,14 @@ public class MaxLan extends LinearOpMode {
         motorLeft.setDirection(DcMotor.Direction.REVERSE);
         while (opModeIsActive()) {
             telemetry.addData("opModeIsActive", opModeIsActive());
+
+            motorLeft.setPower(1);
+            motorRight.setPower(1);
+            telemetry.addData("motorsRunning", ":)");
             telemetry.update();
-            motorRight.setPower(-gamepad1.right_stick_y);
-            motorLeft.setPower(-gamepad1.right_stick_y);
+
+            //motorRight.setPower(-gamepad1.right_stick_y);
+            //motorLeft.setPower(-gamepad1.right_stick_y);
 
 
 
