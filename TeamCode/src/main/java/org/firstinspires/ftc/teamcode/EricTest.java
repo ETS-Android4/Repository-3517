@@ -16,11 +16,8 @@ public class EricTest extends LinearOpMode {
 
         MotorLeft = hardwareMap.dcMotor.get("motorLeft");
         MotorRight = hardwareMap.dcMotor.get("motorRight");
-<<<<<<< Updated upstream:TeamCode/src/main/java/org/firstinspires/ftc/teamcode/EricTest.java
 
         MotorLeft.setDirection(DcMotor.Direction.REVERSE);
-=======
->>>>>>> Stashed changes:TeamCode/src/main/java/org/firstinspires/ftc/teamcode/motorTest/EricTest.java
 
         waitForStart();
         MotorLeft.setDirection(DcMotor.Direction.REVERSE);
@@ -29,6 +26,9 @@ public class EricTest extends LinearOpMode {
             telemetry.addData("opModeIsActive", opModeIsActive());
             telemetry.update();
 
+            MotorLeft.setPower(1);
+            telemetry.addData("Motors running", "Running");
+            telemetry.update();
             /**
              * Wheels
              */

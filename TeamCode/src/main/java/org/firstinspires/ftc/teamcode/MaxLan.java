@@ -24,6 +24,8 @@ public class MaxLan extends LinearOpMode {
             motorRight.setPower(-gamepad1.right_stick_y);
             motorLeft.setPower(-gamepad1.right_stick_y);
 
+
+
             //TODO: Write a program that tells uses the controller to control the wheels... hint: gamepad1.right_stick_x
 
         }
