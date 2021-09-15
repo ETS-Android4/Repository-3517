@@ -19,6 +19,9 @@ public class KevinMotorTest extends LinearOpMode {
             telemetry.update();
 
             motor1.setPower(1);
+
+            telemetry.addData("the power of motor1 is set to 1", "running");
+            telemetry.update()
         }
 
     }
