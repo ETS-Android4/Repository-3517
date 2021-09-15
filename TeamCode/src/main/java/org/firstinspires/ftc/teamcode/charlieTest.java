@@ -20,11 +20,7 @@ public class charlieTest extends LinearOpMode {
             /**
              * Wheels
              */
-<<<<<<< Updated upstream:TeamCode/src/main/java/org/firstinspires/ftc/teamcode/charlieTest.java
-=======
             //TODO: Write a program that tells uses the controller to control the wheels... hint: gamepad1.right_stick_x;
-
->>>>>>> Stashed changes:TeamCode/src/main/java/org/firstinspires/ftc/teamcode/motorTest/charlieTest.java
         }
     }
 }
