@@ -22,7 +22,7 @@ public class blakemotortest extends LinearOpMode {
 
             motor1.setPower (1);
 
-            
+
             telemetry.addData("motor_power", "running");
             telemetry.update();
 
