@@ -9,20 +9,20 @@ import java.util.List;
 @TeleOp
 public class periTest extends LinearOpMode {
     public DcMotor motor1;
-    public DcMotor motor2;
+    //public DcMotor motor2;
 
     public void runOpMode() throws InterruptedException {
 
         motor1 = hardwareMap.dcMotor.get("motor1");
-        motor2 = hardwareMap.dcMotor.get("motor2");
+        //motor2 = hardwareMap.dcMotor.get("motor2");
 
         waitForStart();
         while (opModeIsActive()) {
             telemetry.addData("opModeIsActive",opModeIsActive());
             telemetry.update();
 
-            motor1.setPower(gamepad1.left_stick_y);
-            motor2.setPower(gamepad1.right_stick_y);
+            motor1.setPower(1);
+            //motor2.setPower(gamepad1.right_stick_y);
 
             /**
              * Wheels
