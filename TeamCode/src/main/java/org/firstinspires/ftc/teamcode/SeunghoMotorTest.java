@@ -18,7 +18,7 @@ public class SeunghoMotorTest extends LinearOpMode {
         motor1.setDirection(DcMotor.Direction.REVERSE);
 
         waitForStart();
-        
+
         while (opModeIsActive()) {
             telemetry.addData("opModeIsActive", opModeIsActive());
             telemetry.update();
@@ -26,7 +26,7 @@ public class SeunghoMotorTest extends LinearOpMode {
             motor1.setPower(1);
             motor2.setPower(1);
 
-            telemetry.addData("motor power set to 1", "running");
+            telemetry.addData("both motors power set to 1", "running");
             telemetry.update();
         }
     }
