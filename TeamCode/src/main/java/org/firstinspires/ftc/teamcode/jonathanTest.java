@@ -22,21 +22,18 @@ public class jonathanTest extends LinearOpMode {
         waitForStart();
 
         while (opModeIsActive()) {
-
             telemetry.addData("opModeIsActive", opModeIsActive());
             telemetry.update();
 
-            //motorLeft.setPower(1);
-            //motorRight.setPower(1);
-            telemetry.addData("Motors Running", "Cool");
-            /**
-             * Wheels Wheels Wheels    Empty    mpty    mty mt  _
-             */
-            motorLeft.setPower(-gamepad1.left_stick_y);
-            motorRight.setPower(-gamepad1.right_stick_y);
+            motorLeft.setPower(1);
+            motorRight.setPower(1);
 
-            idle();
+            telemetry.addData("Motors Running", "Cool");
             telemetry.update();
+
+            //motorLeft.setPower(-gamepad1.left_stick_y);
+            //motorRight.setPower(-gamepad1.right_stick_y);
+            //idle();
         }
     }
 }
