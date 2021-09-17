@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
 @TeleOp
 public class KevinWangTest extends LinearOpMode {
@@ -14,6 +15,8 @@ public class KevinWangTest extends LinearOpMode {
 
         motor1 = hardwareMap.dcMotor.get("motor1");
         motor2 = hardwareMap.dcMotor.get("motor2");
+
+        motor1.setDirection(DcMotor.Direction.REVERSE);
 
         waitForStart();
 
