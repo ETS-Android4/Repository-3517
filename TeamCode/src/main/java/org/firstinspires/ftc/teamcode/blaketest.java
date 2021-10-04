@@ -26,7 +26,7 @@ public class blaketest extends LinearOpMode {
              * Wheels
              */
            motorLeft.setPower (-gamepad1.left_stick_y);
-            motorRight.setPower (-gamepad1.right_stick_y);
+           motorRight.setPower (-gamepad1.right_stick_y);
         }
     }
 }
