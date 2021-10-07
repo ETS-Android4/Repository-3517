@@ -32,17 +32,17 @@ public class jonathanTest extends LinearOpMode {
 
             telemetry.addData("Motors Running", "Cool");
             telemetry.update();
-            if (Math.abs(gamepad1.left_stick_y) > 0){
+            if (gamepad1.left_stick_y > 0.8)
+            {
                 motorLeft.setPower(-gamepad1.left_stick_y);
                 motorRight.setPower(-gamepad1.left_stick_y);
             }
-            else if (Math.abs(gamepad1.right_stick_x) > 0){
-                motorLeft.setPower(gamepad1.right_stick_x);
-                motorRight.setPower(-gamepad1.right_stick_x);
+            else if (gamepad1.left_stick_x > 0.8)
+            {
+                motorMiddle.setPower(-gamepad1.left_stick_x);
             }
-            motorMiddle.setPower(-gamepad1.left_stick_x);
-
-
+            motorLeft.setPower(gamepad1.right_stick_x);
+            motorRight.setPower(-gamepad1.right_stick_x);
             //idle();
         }
     }
