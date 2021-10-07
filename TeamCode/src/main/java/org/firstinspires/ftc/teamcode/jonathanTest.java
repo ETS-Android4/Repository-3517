@@ -13,6 +13,10 @@ public class jonathanTest extends LinearOpMode {
     private DcMotor motorRight;
     private DcMotor motorMiddle;
 
+    private float leftMotorPower = 0f;
+    private float rightMotorPower = 0f;
+    private float middleMotorPower = 0f;
+
     public void runOpMode() throws InterruptedException {
 
         motorLeft = hardwareMap.dcMotor.get("motorLeft");
@@ -27,20 +31,34 @@ public class jonathanTest extends LinearOpMode {
             telemetry.addData("opModeIsActive", opModeIsActive());
             telemetry.update();
 
-            telemetry.addData("Motors Running", "Cool");
-            telemetry.update();
-            if (Math.abs(gamepad1.left_stick_y) > 0){
-                motorLeft.setPower(-gamepad1.left_stick_y);
-                motorRight.setPower(-gamepad1.left_stick_y);
+            leftMotorPower = gamepad1.left_stick_y;
+            rightMotorPower = gamepad1.right_stick_y;
+            middleMotorPower = gamepad1.right_stick_x;
+
+            if (Math.abs(gamepad1.right_stick_x) > 0 && Math.abs(gamepad1.left_stick_y) > 0) {
+                if(gamepad1.right_stick_x > 0){
+                    leftMotorPower = 0;
+                    rightMotorPower = gamepad1.right_stick_x;
+                }
+                else if (gamepad1.right_stick_x < 0){
+                    rightMotorPower = 0;
+                    leftMotorPower = gamepad1.right_stick_x;
+                }
             }
             else if (Math.abs(gamepad1.right_stick_x) > 0){
-                motorLeft.setPower(gamepad1.right_stick_x);
-                motorRight.setPower(-gamepad1.right_stick_x);
+                if(gamepad1.right_stick_x > 0){
+                    leftMotorPower = -gamepad1.right_stick_x;
+                    rightMotorPower = gamepad1.right_stick_x;
+                }
+                else if (gamepad1.right_stick_x < 0){
+                    rightMotorPower = gamepad1.right_stick_x;
+                    leftMotorPower = -gamepad1.right_stick_x;
+                }
             }
-            motorMiddle.setPower(-gamepad1.left_stick_x);
 
-
-            //idle();
+            motorLeft.setPower(leftMotorPower);
+            motorRight.setPower(rightMotorPower);
+            motorMiddle.setPower(middleMotorPower);
         }
     }
 }
